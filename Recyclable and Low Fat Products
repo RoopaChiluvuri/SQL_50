@@ -1,0 +1,21 @@
+
+Products table:
++-------------+----------+------------+
+| product_id  | low_fats | recyclable |
++-------------+----------+------------+
+| 0           | Y        | N          |
+| 1           | Y        | Y          |
+| 2           | N        | Y          |
+| 3           | Y        | Y          |
+| 4           | N        | N          |
++-------------+----------+------------+ 
+
+Write a solution to find the ids of products that are both low fat and recyclable.
+
+# MySql Solution 
+
+SELECT product_id
+FROM Products
+where low_fats = 'Y' AND recyclable = 'Y';
+
+# Time Complexity is O(n), where n is number of rows in the Products table 
